@@ -4,7 +4,7 @@ MAINTAINER the-mast@thoughtworks.com
 RUN apk add --update --no-cache gcc g++ make git curl 
 RUN apk add --no-cache python nodejs 
 RUN apk add --no-cache php5 php5-curl php5-openssl php5-json php5-phar php5-dom
-RUN npm install -g gulp-cli bower node-sass
+RUN npm install --unsafe -g gulp-cli bower node-sass
 RUN apk add --no-cache fontconfig && \
   mkdir -p /usr/share && \
     cd /usr/share \
