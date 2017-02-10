@@ -13,5 +13,3 @@ RUN apk add --no-cache fontconfig && \
 RUN curl -sS https://getcomposer.org/installer | php -- --install-dir=/usr/bin --filename=composer
 
 CMD ["/bin/sh"]
-
-ENTRYPOINT ["/bin/sh", "-c"]
